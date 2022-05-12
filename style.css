@@ -1,0 +1,147 @@
+body{
+    font-family: Raleway;
+    background-color: hsl(229, 57%, 11%);
+    margin: 0;
+    padding: 0;
+}
+.main-image{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: flex-end;
+}
+.container .fylo{
+    width: 220px;
+    height: 100px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 80px 10px 10px;
+    padding: 30px;
+    margin-right: 25px;
+}
+.container .fylo .logo{
+    width: 100px;
+}
+.container .fylo .images{
+    display: flex;
+    margin-top: 25px;
+}
+.container .fylo .images div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(229, 57%, 11%);
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.container .fylo .images div img{
+    width: 18px;
+}
+.container .storage{
+    background-color: hsl(228, 56%, 26%);
+    width: 450px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 30px;
+}
+.container .storage p{
+    font-size: 13px;
+    color:  hsl(229, 7%, 55%);
+    font-weight: 400;
+    margin-top: 0;
+}
+.container .storage p span{
+    color: hsl(243, 100%, 93%);
+    font-size: 12px;
+}
+.container .storage .progress-bar{
+    background-color: hsl(229, 57%, 11%);
+    width: 100%;
+    height: 11px;
+    border-radius: 70px;
+    position: relative;
+    padding: 2px;
+}
+.container .storage .progress-bar::after{
+    content: "";
+    width: 80%;
+    height: calc(100% - 4px);
+    border-radius: 70px;
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    position: absolute;
+}
+.container .storage .progress-bar::before{
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 355px;
+    top: 3px;
+    z-index: 1;
+}
+.container .storage .zero,.thousand{
+    color: hsl(243, 100%, 93%);
+    font-size: 11px;
+    font-weight: 700;
+}
+.container .storage .zero{
+    margin-right: 377px;
+}
+.container .storage .gb-left{
+    width: 105px;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 7px;
+    padding: 20px;
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -130px;
+    left: 308px;
+}
+.container .storage .gb-left::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    background-color: white;
+    transform: skewY(50deg);
+}
+.container .storage .gb-left span{
+    font-size: 11px;
+    color: hsl(229, 7%, 55%);
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.end{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.end span{
+    font-size: 16px;
+    font-weight: bold;
+}
+
